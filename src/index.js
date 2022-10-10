@@ -26,8 +26,8 @@ export default class OneAPI {
   getBookChapters(bookId) {
     return getBookChapters(apiUrl, bookId);
   }
-  getAllMovies(movieId) {
-    return getAllMovies(apiUrl, this._apiToken, movieId);
+  getAllMovies() {
+    return getAllMovies(apiUrl, this._apiToken);
   }
   getMovie(movieId) {
     return getMovie(apiUrl, this._apiToken, movieId);
@@ -35,8 +35,8 @@ export default class OneAPI {
   getMovieQuotes(movieId) {
     return getMovieQuotes(apiUrl, this._apiToken, movieId);
   }
-  getAllCharacters(charId) {
-    return getAllCharacters(apiUrl, this._apiToken, charId);
+  getAllCharacters() {
+    return getAllCharacters(apiUrl, this._apiToken);
   }
   getCharacter(charId) {
     return getCharacter(apiUrl, this._apiToken, charId);
@@ -44,14 +44,14 @@ export default class OneAPI {
   getCharacterQuotes(charId) {
     return getCharacterQuotes(apiUrl, this._apiToken, charId);
   }
-  getAllQuotes(quoteId) {
-    return getAllQuotes(apiUrl, this._apiToken, quoteId);
+  getAllQuotes() {
+    return getAllQuotes(apiUrl, this._apiToken);
   }
   getSingleMovieQuotes(quoteId) {
     return getSingleMovieQuotes(apiUrl, this._apiToken, quoteId);
   }
-  getAllChapters(chapterId) {
-    return getAllChapters(apiUrl, this._apiToken, chapterId);
+  getAllChapters() {
+    return getAllChapters(apiUrl, this._apiToken);
   }
   getChapter(chapterId) {
     return getChapter(apiUrl, this._apiToken, chapterId);
