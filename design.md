@@ -1,0 +1,3 @@
+# How I decided to design this SDK
+
+I decided to create each API endpoint into its own file for easier management. Each file is imported into index.js where it falls under a class called OneApi. I decided to design each function by importing a dependency called `cross-fetch` to retrieve data from each API endpoint. The only method that each function performs is `GET` since we are not updating or posting new data into the database. If the proper API endpoint, applicable `id`, and proper authorization is entered, the function will return the specified information in JSON format. However, if the API endpoint, `id`, or authorization token are not accepted, a `.catch()` will perform and return a `console.error()`.
